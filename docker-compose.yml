@@ -1,0 +1,8 @@
+services:
+  hailortcli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: fw-control identify
+    privileged: true
+    restart: no
